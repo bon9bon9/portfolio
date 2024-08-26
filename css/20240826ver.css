@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    display: grid;
+    font-family : 'Nanum Myeongjo', serif;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows : 70px 550px auto 300px;
+    background-color: #fdfdf3;
+}
+
+h2{
+    color:#574d31e8;
+    font-weight: 800;
+}
+  
+h3{
+    color : #af7a3de8;
+    font-weight: 800;
+}
+
+
+.top-container{
+    grid-column: 1/4;
+    grid-row : 2;
+    background-color: #FBF7AF;
+
+    display: grid;
+    
+}
+
+.middle-container{
+    grid-column: 2/3;
+    grid-row : 3;
+
+    display :grid;
+    grid-template-columns : 1fr 1fr 1fr;
+    grid-template-rows: 450px minmax(200px, auto);
+    gap : 20px;
+}
+
+.bottom-container{
+    grid-column: 1/4;
+    grid-row: 4;
+    text-align: center;
+    background-color: rgba(255, 196, 34, 0.603);
+}
+
+#top-banana-img{
+    transform: scaleY(-1);
+    grid-column: 3;
+    grid-row: 1;
+    overflow: hidden; /* 그리드 셀을 넘는 부분을 숨기기 위해 추가 */
+    display: flex; /* 이미지를 가운데 정렬하기 위해 flexbox 사용 */
+    justify-content: flex-start; /* 가로 중앙 정렬 */
+}
+
+.intro{
+    grid-column: 2;
+    grid-row : 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-banana-img{
+    transform : scaleX(-1);
+    grid-column : 1;
+    grid-row: 3;
+    overflow: hidden; /* 그리드 셀을 넘는 부분을 숨기기 위해 추가 */
+    display: flex; /* 이미지를 가운데 정렬하기 위해 flexbox 사용 */
+    justify-content: flex-start;/* 가로 중앙 정렬 */
+}
+
+#big-center-banana-img-div{
+    grid-column: 1/4;
+    grid-row: 4;
+    background: linear-gradient(to bottom, #FBF7AF 50%, #fdfdf3 50%); 
+    overflow: hidden; /* 그리드 셀을 넘는 부분을 숨기기 위해 추가 */
+    display: flex; /* 이미지를 가운데 정렬하기 위해 flexbox 사용 */
+    justify-content: center;
+}
+
+.big-center-banana-img{
+    object-fit: contain; /* 이미지가 잘리지 않고 셀에 맞추어 표시 */
+    height:100%;
+    width: auto;
+}
+
+.profile-img {
+    width : 15%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.banana-img{
+    width: auto;
+    height: 100%; /* 이미지 비율을 유지하면서 높이를 자동으로 조정 */
+    object-fit: contain; /* 이미지가 잘리지 않고 셀에 맞추어 표시 */
+}
+
+.skill-img{
+    width : 30%;
+}
+
+.my-link-div {
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease; /* 모든 애니메이션을 설정 */
+}
+
+.my-link-div:hover {
+    background-color: #f7f7d4f1;
+    border-radius: 20%;
+    transform: translateY(-3px); /* 요소를 위로 3px 이동 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* hover 상태에서 부드러운 그림자 효과 */
+}
+
+
+.my-link-img-div{
+    width:100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#notion-img{
+    width:70%;
+}
+
+.my-link-img{
+    width:100%;
+    height:auto;
+    object-fit :contain;
+}
+
+.btn {
+    background: #ffd931;
+    background-image: -webkit-linear-gradient(top, #ffd931, #d3ac2b);
+    background-image: -moz-linear-gradient(top, #ffd931, #d3ac2b);
+    background-image: -ms-linear-gradient(top, #ffd931, #d3ac2b);
+    background-image: -o-linear-gradient(top, #ffd931, #d3ac2b);
+    background-image: linear-gradient(to bottom, #ffd931, #d3ac2b);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    margin-top : 100px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #ffe573;
+    background-image: -webkit-linear-gradient(top, #ffe573, #ceaf4b);
+    background-image: -moz-linear-gradient(top, #ffe573, #ceaf4b);
+    background-image: -ms-linear-gradient(top, #ffe573, #ceaf4b);
+    background-image: -o-linear-gradient(top, #ffe573, #ceaf4b);
+    background-image: linear-gradient(to bottom, #ffe573, #ceaf4b);
+    text-decoration: none;
+  }
+  
+
+
+

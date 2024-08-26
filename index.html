@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Nanum+Myeongjo:wght@700;800&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/20240826ver.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -20,54 +20,44 @@
 
 <body>
   <div class="top-container">
-    <div class="yellow-back">
-      <img class="top-banana" src="images/onebanana.png" alt="">
-      <div class="intro">
-        <img class = "profileimg" src = "images/pro.png" alt="">
-        <h1 class = "hello">안녕하세요, 박희원 입니다.</h1>
-      </div>
-      <img class="bottom-banana" src="images/onebanana.png" alt="">
+    <div id = "top-banana-img">    
+      <img class="banana-img" src="images/onebanana.png" alt="">
     </div>
-    <img class="big-center-banana" src="images/bananas.png" alt="">
+    <div class="intro">
+      <img class = "profile-img" src = "images/pro.png" alt="">
+      <h1 class = "hello">안녕하세요, 박희원 입니다.</h1>
+    </div>
+    <div id = "bottom-banana-img">
+      <img class="banana-img" src="images/onebanana.png" alt="">
+    </div>
+    <div id = "big-center-banana-img-div">
+      <img class="big-center-banana-img" src="images/bananas.png" alt="">
+    </div>
   </div>
 
   <div class="middle-container">
-    <div class="profile">
-      <img class ="profileimg" src="images/pro.png" alt="profile-pic" id="profile">
-      <h2>안녕하세요!</h2>
-      <p class="introduce">숭실대학교 소프트웨어학부 재학중인 학생입니다.</p>
+    <div id = "notion" class = "my-link-div" onclick = 'location.href="https://sleepy-enemy-14e.notion.site/6c6adcd53c3f42aca0a93a923dafeb32"'>
+      <div class = "my-link-img-div"><img id = "notion-img" class = "my-link-img" src = "images/notion.png" alt=""></div>
+      <a class = "my-link-url">노션 바로가기</a>
     </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills</h2>
-
-      <div class="skill-row">
-        <img class="skillimage" src="images/developer.png" alt="">
-        <div class="text-box">
-          <h3>프론트엔드</h3>
-          <p>지금 연습 중입니다만..정렬이 너무 어렵구만요</p>
-        </div>
-      </div>
-
-      <div class="skill-row">
-        <div class="text-box">
-          <h3>백엔드</h3>
-          <p>아직..큼..할게요..</p>
-        </div>
-        <img class="skillimage" src="images/design.png" alt="">
-      </div>
-      
+    <div id = "git" class = "my-link-div" onclick = 'location.href="https://github.com/bon9bon9"'>
+      <div class = "my-link-img-div"><img class = "my-link-img" src = "images/git.png" alt=""></div>
+      <a class = "my-link-url">깃허브 바로가기</a>
     </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Contact Details</h3>
-      <p class="contact-message">tel) 010-2570-7816<br>email) rnem8831@gmail.com</p>
-      <a class="btn" href="mailto:rnem8831@gmail.com">CONTACT ME</a>
+    <div id = "tistory" class = "my-link-div" onclick = 'location.href="https://bon9bon9.tistory.com/"'>
+      <div class = "my-link-img-div"><img class = "my-link-img" src = "images/tistory.png" alt=""></div>
+      <a class = "my-link-url">티스토리 바로가기</a>
     </div>
   </div>
 
   <div class="bottom-container">
+    <h2>Contact Details</h2>
+    <div class="contact-me">
+      <p class="contact-message">tel) 010-2570-7816<br>email) rnem8831@gmail.com</p>
+      <br>
+      <a class="btn" href="mailto:rnem8831@gmail.com">CONTACT ME</a>
+    </div>
+    <br>
     <p class="copyright">© 2022 박희원. © 박희원.</p>
   </div>
 

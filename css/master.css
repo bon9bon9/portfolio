@@ -43,19 +43,19 @@ p{
   font-weight: 800;
 }
 
-.profileimg {
+.profile-img {
   width : 15%;
   border-radius: 50%;
 }
 
-.top-banana{
+#top-banana-img{
   position : absolute;
   transform :scaleY(-1);
   left : 85%;
   width : 10%;
 }
 
-.bottom-banana{
+#bottom-banana-img{
   position : absolute;
   transform : scaleX(-1);
   left : 3%;
@@ -63,7 +63,7 @@ p{
   width : 10%;
 }
 
-.big-center-banana{
+.big-center-banana-img{
   position : relative;
   bottom : 120px;
   width : 15%;
@@ -87,7 +87,7 @@ p{
   font-family :'Gowun Batang',sans-serif;
   margin-top : 0px;
 }
-.skillimage{
+.skill-img{
   width : 30%;
 }
 hr {
